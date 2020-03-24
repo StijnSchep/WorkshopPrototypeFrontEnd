@@ -1,0 +1,49 @@
+#app {
+    font-family: Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
+}
+
+.personalinfo{
+    float: right;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.el-aside {
+    background: #545c64;
+    color: white;
+    min-height: 100vh;
+}
+
+.logo-container {
+    padding: 30px;
+    background: #ffffff;
+}
+
+.el-menu {
+    border-right: 0 !important;
+}
+
+.el-main {
+    background: #EEF1F4;
+}
+
+.breadcrumb-container {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.menu_item_1 {
+    display: list-item;
+}

@@ -1,0 +1,66 @@
+DAO template:
+
+
+- getAllOrganisations()
+    Returns a list with organisations, for each including:
+    - ID 
+    - Name
+    - Logo (URL)
+
+
+- postEnrollmentCode(organisation, code)
+    organisation: the ID of the organisation
+    code: the code which the participant entered
+    
+    Saves the response token in a cookie. 
+    String responses: 
+        SUCCESS, CODE_INVALID, API_ERROR
+
+
+
+- getGroupsByOrganisationId(oganisation)
+    organisation: the ID of the organisation
+
+    Should check if there is a token saved in cookies
+    Responses:
+        API_ERROR, NO_TOKEN_PROVIDED, List with groups, for each including:
+            - ID
+            - Name
+
+- getParticipantsByGroupId(group)
+    group: the ID of the group
+
+    Should check if there is a token saved in cookies
+    Responses:
+        API_ERROR, NO_TOKEN_PROVIDED, List with participants, for each including:
+            - ID
+            - Firstname
+            - Lastname
+
+- getRoundDataByGroupId(group)
+    group: the ID of the group
+
+    Should check if there is a token saved in cookies
+    Responses:
+        API_ERROR, NO_TOKEN_PROVIDED, List with rounds, for each including:
+            - ID
+            - Name
+            - StartTime (optional)
+            - EndTime   (optional)
+
+            - List with available workshops, for each including:
+                - ID
+                - Name
+                - Description
+                - Vimeo URL (may change to allow youtube URLs as well)
+
+
+
+
+
+
+
+                
+                
+
+

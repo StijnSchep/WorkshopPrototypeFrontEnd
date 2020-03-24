@@ -1,0 +1,19 @@
+image: ubuntu:bionic
+
+before_script:
+ # Setup SSH deploy keys
+ - apt-get update -y
+ - apt-get install -y sshpass
+ - apt-get install -y nodejs
+ - apt-get install -y npm
+ - 'which ssh-agent || ( apt-get install -qq -y openssh-client )'
+    
+deploy_stage:
+  stage: deploy
+  environment: Staging
+  only:
+    - master
+  script:
+    - npm install --quiet
+    - priv="$SSH_PRIVATE_KEY"
+    - script -qc 'sshpass -p "$priv" ssh -p 222 guuslieben@node.studyhost.nl "cd /home/guuslieben/htdocs/SkoolWorkshops/app/ && sudo rm -rf node_modules/ && git checkout master && git pull origin master && npm install --quiet && exit;"'

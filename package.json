@@ -1,0 +1,76 @@
+{
+  "name": "skool-workshops",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "test": "./node_modules/.bin/mocha --reporter spec --exit"
+  },
+  "dependencies": {
+    "@fullcalendar/core": "4.1.0",
+    "@fullcalendar/daygrid": "4.1.0",
+    "@fullcalendar/list": "4.1.0",
+    "@fullcalendar/timegrid": "4.1.0",
+    "@fullcalendar/vue": "4.1.1",
+    "axios": "0.19.0",
+    "bootstrap": "4.3.1",
+    "bootstrap-vue": "2.0.0-rc.21",
+    "convert-excel-to-json": "^1.6.1",
+    "core-js": "2.6.5",
+    "element-ui": "2.8.2",
+    "fullcalendar": "3.10.0",
+    "jquery": "3.4.1",
+    "mdbvue": "5.4.0",
+    "moment": "2.24.0",
+    "postcss-import": "12.0.1",
+    "v-suggestions": "1.1.1",
+    "vue": "2.6.10",
+    "vue-fullcalendar": "1.0.9",
+    "vue-helmet": "1.1.5",
+    "vue-multiselect": "2.1.6",
+    "vue-read-more": "1.1.1",
+    "vue-route": "1.5.1",
+    "vue-router": "3.0.6",
+    "vue-simple-upload": "0.1.6",
+    "vue-virtual-table": "0.2.13",
+    "vuejs-dialog": "1.4.0",
+    "xlsx": "^0.14.3"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "3.7.0",
+    "@vue/cli-plugin-eslint": "3.7.0",
+    "@vue/cli-service": "3.7.0",
+    "babel-eslint": "10.0.1",
+    "eslint": "5.16.0",
+    "eslint-plugin-vue": "5.0.0",
+    "mocha": "6.1.4",
+    "node-sass": "4.12.0",
+    "sass-loader": "7.1.0",
+    "vue-template-compiler": "2.6.10"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
