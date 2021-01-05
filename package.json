@@ -14,7 +14,7 @@
     "@fullcalendar/list": "4.1.0",
     "@fullcalendar/timegrid": "4.1.0",
     "@fullcalendar/vue": "4.1.1",
-    "axios": "0.19.0",
+    "axios": "0.21.1",
     "bootstrap": "4.3.1",
     "bootstrap-vue": "2.0.0-rc.21",
     "convert-excel-to-json": "^1.6.1",
